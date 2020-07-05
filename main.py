@@ -12,11 +12,6 @@ class Player:
         demonlist = Demonlist()
         self.name = name
         self.demons = getDemons(self.name)
-        for demon in demonlist:
-            if demon in self.demons:
-                color = "green"
-            else:
-                color = "red"
         master1 = Tk()
         Label(master1, text=self.name, font="times 36").grid(row=0, column=0)
         for x in range(15):
